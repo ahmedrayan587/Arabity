@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Roboto:wght@100;300;400;500;700;900&family=Sigmar+One&display=swap" rel="stylesheet">
+    <title>All Stores</title>
+</head>
+<body class="all-stores-page-body">
+    <header class="header d-flex row justify-content-around align-items-baseline">
+        <a class="navbar-brand col-3" href="#">ARABITY</a>
+        <nav class="header-nav col-6 d-flex justify-content-end align-items-center">
+            <div class="dropdown m-2">
+                <button id="card-btn" class="btn shop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path
+                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                    </svg>
+                </button>
+                <ul class="dropdown-menu shop-menu menu">
+                    <li class="list-group-item">Home</li>
+                    <li class="list-group-item">Services</li>
+                    <li class="list-group-item">Portfolio</li>
+                    <li class="list-group-item">About</li>
+                    <li class="list-group-item">Contact</li>
+                </ul>
+            </div>
+            <div class="dropdown m-2">
+                <button id="card-btn" class="btn shop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                    </svg>
+                </button>
+                <ul id="shop" class="dropdown-menu shop-menu">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Product name</h6>
+                            <small class="text-muted">3 pieces</small>
+                        </div>
+                        <div>
+                            <span id="price" class="text-muted">$12</span>
+                            <button id="close" type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Second product</h6>
+                            <small class="text-muted">1 pieces</small>
+                        </div>
+                        <div>
+                            <span id="price" class="text-muted">$8</span>
+                            <button id="close" type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Third item</h6>
+                            <small class="text-muted">4 pieces</small>
+                        </div>
+                        <div>
+                            <span id="price" class="text-muted">$5</span>
+                            <button id="close" type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (USD)</span>
+                        <div>
+                            <strong id="total"></strong>
+                            <button id="close-all" type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <a class="buy" href="payment.html"><button class="contact" type="button">BUY NOW</button></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown m-2">
+                <button id="card-btn" class="btn shop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img class="acount-image" src="image/artur-aldyrkhanov-_omYGHPwGEU-unsplash.jpg" alt="">
+                </button>
+                <ul class="dropdown-menu shop-menu menu">
+                    <li class="list-group-item">UserName</li>
+                    <li class="list-group-item">Favourites</li>
+                    <li class="list-group-item">Settings</li>
+                    <li class="list-group-item">About</li>
+                    <li class="list-group-item red">Log Out
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                            <path fill-rule="evenodd"
+                                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="scroller"></div>
+    <div class="d-flex row wrap car-type">
+    <div class="category col-lg-3 col-md-6 col-sm-12">
+        <button class="accordion">Japanese Cars</button>
+        <div class="panel">
+        <a href="#"><img class="car-brand" src="image/Toyota_Canada_Inc.-Logo.wine.svg"/>Toyota</a>
+        <a href="#"><img class="car-brand" src="image/Nissan_Motor_India_Private_Limited-Logo.wine.svg"/> Nissan</a>
+        <a href="#"><img class="car-brand" src="image/Honda-Logo.wine.svg"/> Honda</a>
+        <a href="#"><img class="car-brand" src="image/Mitsubishi_Motors-Logo.wine.svg"/> Mitsubishi</a>
+        <a href="#"><img class="car-brand" src="image/Mazda-Logo.wine.svg"/> Mazda</a>
+        <a href="#"><img class="car-brand" src="image/Subaru-Logo.wine.svg"/> Subaru</a>
+        <a href="#"><img class="car-brand" src="image/Suzuki-Logo.wine.svg"/> Suzuki</a>
+        </div>
+    </div>
+    
+    <div class="category col-lg-3 col-md-6 col-sm-12">
+        <button class="accordion">Korean Cars</button>
+        <div class="panel">
+        <a href="#"><img class="car-brand" src="image/Hyundai_Motor_Group-Logo.wine.svg"/> Hyundai</a>
+        <a href="#"><img class="car-brand" src="image/Kia_Motors-Logo.wine.svg"/> Kia</a>
+        </div>
+    </div>
+    
+    <div class="category col-lg-3 col-md-6 col-sm-12">
+        <button class="accordion">European Cars</button>
+        <div class="panel">
+        <a href="#"><img class="car-brand" src="image/BMW-Logo.wine.svg"/> BMW</a>
+        <a href="#"><img class="car-brand" src="image/Mercedes-Benz-Logo.wine.svg"/> Mercedes-Benz</a>
+        <a href="#"><img class="car-brand" src="image/Audi-Logo.wine.svg"/> Audi</a>
+        <a href="#"><img class="car-brand" src="image/Volkswagen_Commercial_Vehicles-Logo.wine.svg"/> Volkswagen</a>
+        <a href="#"><img class="car-brand" src="image/Volvo-Logo.wine.svg"/> Volvo</a>
+        </div>
+    </div>
+    
+    <div class="category col-lg-3 col-md-6 col-sm-12">
+        <button class="accordion">American Cars</button>
+        <div class="panel">
+        <a href="#"><img class="car-brand" src="image/chevrolet-logo5.svg"/> Chevrolet</a>
+        <a href="#"><img class="car-brand" src="image/ford-8.svg"/> Ford</a>
+        <a href="#"><img class="car-brand" src="image/jeep-7.svg"/> Jeep</a>
+        <a href="#"><img class="car-brand" src="image/cadillac-automobiles-2.svg"/> Cadillac</a>
+        <a href="#"><img class="car-brand" src="image/Dodge-Logo.wine.svg"/> Dodge</a>
+        </div>
+    </div>
+  </div>
+
+
+    <div class="search">
+        <input type="search" id="search" onkeyup="search()" placeholder="search..." />
+        <button class="">Search</button>
+        <button class="filter mx-2 align-items-baseline">Filters
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+        </button>
+    </div>
+    <div id="all-centers" class="d-flex row justify-content-center align-items-center my-3">
+        <div id="center" class="container-2 m-3">
+            <a id="center-page" href="center.html"></a>
+            <img class="img centers-img" src="image/nathan-trampe-cyIERGMF_1U-unsplash.jpg" />
+            <h2 class="center-name mx-0" id="centerName">X Workshop</h2>
+            <p>At XYZ Workshop, we offer a wide range of services to keep your car running smoothly.</p>
+            <div class="workshop-details">
+              <p><strong>Hours:</strong> Saturday - Wednesday: 8am - 6pm, Thusday: 9am - 5pm, Friday: Closed</p>
+              <p><strong>Address:</strong> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill"
+                                  viewBox="0 0 16 16">
+                                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                              </svg> 123 Main St, Anytown USA</p>
+            </div>
+        </div>
+        <div id="center" class="container-2 m-3">
+            <a id="center-page" href="center.html"></a>
+            <img class="img centers-img" src="image/nathan-trampe-cyIERGMF_1U-unsplash.jpg" />
+            <h2 class="center-name mx-0" id="centerName">Y Workshop</h2>
+            <p>At XYZ Workshop, we offer a wide range of services to keep your car running smoothly.</p>
+            <div class="workshop-details">
+              <p><strong>Hours:</strong> Saturday - Wednesday: 8am - 6pm, Thusday: 9am - 5pm, Friday: Closed</p>
+              <p><strong>Address:</strong> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill"
+                                  viewBox="0 0 16 16">
+                                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                              </svg> 123 Main St, Anytown USA</p>
+            </div>
+        </div>
+        <div id="center" class="container-2 m-3">
+            <a id="center-page" href="center.html"></a>
+            <img class="img centers-img" src="image/nathan-trampe-cyIERGMF_1U-unsplash.jpg" />
+            <h2 class="center-name mx-0" id="centerName">Z Workshop</h2>
+            <p>At XYZ Workshop, we offer a wide range of services to keep your car running smoothly.</p>
+            <div class="workshop-details">
+              <p><strong>Hours:</strong> Saturday - Wednesday: 8am - 6pm, Thusday: 9am - 5pm, Friday: Closed</p>
+              <p><strong>Address:</strong> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill"
+                                  viewBox="0 0 16 16">
+                                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                              </svg> 123 Main St, Anytown USA</p>
+            </div>
+        </div>
+        <div id="center" class="container-2 m-3">
+            <a id="center-page" href="center.html"></a>
+            <img class="img centers-img" src="image/nathan-trampe-cyIERGMF_1U-unsplash.jpg" />
+            <h2 class="center-name mx-0" id="centerName">X Workshop</h2>
+            <p>At XYZ Workshop, we offer a wide range of services to keep your car running smoothly.</p>
+            <div class="workshop-details">
+              <p><strong>Hours:</strong> Saturday - Wednesday: 8am - 6pm, Thusday: 9am - 5pm, Friday: Closed</p>
+              <p><strong>Address:</strong> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill"
+                                  viewBox="0 0 16 16">
+                                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                              </svg> 123 Main St, Anytown USA</p>
+            </div>
+        </div>
+        <div id="center" class="container-2 m-3">
+            <a id="center-page" href="center.html"></a>
+            <img class="img centers-img" src="image/nathan-trampe-cyIERGMF_1U-unsplash.jpg" />
+            <h2 class="center-name mx-0" id="centerName">Z Workshop</h2>
+            <p>At XYZ Workshop, we offer a wide range of services to keep your car running smoothly.</p>
+            <div class="workshop-details">
+              <p><strong>Hours:</strong> Saturday - Wednesday: 8am - 6pm, Thusday: 9am - 5pm, Friday: Closed</p>
+              <p><strong>Address:</strong> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill"
+                                  viewBox="0 0 16 16">
+                                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                              </svg> 123 Main St, Anytown USA</p>
+            </div>
+        </div>
+        <div id="center" class="container-2 m-3">
+            <a id="center-page" href="center.html"></a>
+            <img class="img centers-img" src="image/nathan-trampe-cyIERGMF_1U-unsplash.jpg" />
+            <h2 class="center-name mx-0" id="centerName">Y Workshop</h2>
+            <p>At XYZ Workshop, we offer a wide range of services to keep your car running smoothly.</p>
+            <div class="workshop-details">
+              <p><strong>Hours:</strong> Saturday - Wednesday: 8am - 6pm, Thusday: 9am - 5pm, Friday: Closed</p>
+              <p><strong>Address:</strong> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill"
+                                  viewBox="0 0 16 16">
+                                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                              </svg> 123 Main St, Anytown USA</p>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/all.js"></script>
+    <script src="javascript/landing.js"></script>
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    <script src="javascript/all.min.js"></script>
+</body>
+</html>

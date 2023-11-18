@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/dashboard.css" />
+        <title class="text-capitalize">Dashboard</title>
+    </head>
+    <body>
+        <div class="main d-flex row col-12">
+            <h1 class="page-header text-capitalize col-12">dashboard</h1>
+            <div class="sections-container d-flex col-12 justify-content-evenly">
+                <div class="section my-3 col-lg-10 col-md-10 col-sm-12">
+                    <div class="welcome-head col-12">
+                    <h2 class="col-12 text-capitalize">welcome</h2>
+                    <p class="col-12 text-capitalize">elzero</p>
+                    <img class="welcome-image" src="image/welcome.png" alt="" />
+                    <img class="welcome-avatar col-6" src="image/avatar.png" />
+                    </div>
+                    <div class="welcome-mid d-flex col-12 row nowrap">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <h2 class="col-12 text-capitalize">osama elzero</h2>
+                        <p class="col-12 text-capitalize">developer</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <h2 class="col-12 text-capitalize">80</h2>
+                        <p class="col-12 text-capitalize">projects</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <h2 class="col-12 text-capitalize">$8500</h2>
+                        <p class="col-12 text-capitalize">earned</p>
+                    </div>
+                    </div>
+                    <div class="d-flex col-12 row justify-content-end align-items-end">
+                    <button class="button btn btn-primary">profile</button>
+                    </div>
+                </div>
+                <div class="charts section my-3 col-lg-10 col-md-10 col-sm-12">
+                    <h2 class="section-head col-12 text-capitalize">Statistics</h2>
+                    <div class="charts-card">
+                        <h2 class="chart-title">Sales Orders</h2>
+                        <div id="area-chart"></div>
+                    </div>
+                    <div class="charts-card">
+                      <h2 class="chart-title">Top 5 Products</h2>
+                      <div id="bar-chart"></div>
+                    </div>
+                </div>
+                <div class="section my-3 col-lg-10 col-md-10 col-sm-12">
+                    <h2 class="section-head col-12 text-capitalize">Orders</h2>
+                    <div class="justify-content-center row wrap">
+                        <div class="card total col-5 m-4 text-center p-3">
+                          <div class="card-inner">
+                            <h3>Total</h3>
+                            <svg class="order-svg my-2 svg-inline--fa fa-rectangle-list fa-2x mb-10 c-orange" aria-hidden="true" focusable="false" data-prefix="far" data-icon="rectangle-list" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M128 192C110.3 192 96 177.7 96 160C96 142.3 110.3 128 128 128C145.7 128 160 142.3 160 160C160 177.7 145.7 192 128 192zM200 160C200 146.7 210.7 136 224 136H448C461.3 136 472 146.7 472 160C472 173.3 461.3 184 448 184H224C210.7 184 200 173.3 200 160zM200 256C200 242.7 210.7 232 224 232H448C461.3 232 472 242.7 472 256C472 269.3 461.3 280 448 280H224C210.7 280 200 269.3 200 256zM200 352C200 338.7 210.7 328 224 328H448C461.3 328 472 338.7 472 352C472 365.3 461.3 376 448 376H224C210.7 376 200 365.3 200 352zM128 224C145.7 224 160 238.3 160 256C160 273.7 145.7 288 128 288C110.3 288 96 273.7 96 256C96 238.3 110.3 224 128 224zM128 384C110.3 384 96 369.7 96 352C96 334.3 110.3 320 128 320C145.7 320 160 334.3 160 352C160 369.7 145.7 384 128 384zM0 96C0 60.65 28.65 32 64 32H512C547.3 32 576 60.65 576 96V416C576 451.3 547.3 480 512 480H64C28.65 480 0 451.3 0 416V96zM48 96V416C48 424.8 55.16 432 64 432H512C520.8 432 528 424.8 528 416V96C528 87.16 520.8 80 512 80H64C55.16 80 48 87.16 48 96z">
+                            
+                            </path>
+                            </svg>
+                          </div>
+                          <h1>249</h1>
+                        </div>
+              
+                        <div class="card pending col-5 m-4 text-center p-3">
+                          <div class="card-inner">
+                            <h3>Pending</h3>
+                            <svg class="order-svg  my-2 svg-inline--fa fa-spinner fa-2x mb-10 c-blue" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="spinner" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M304 48C304 74.51 282.5 96 256 96C229.5 96 208 74.51 208 48C208 21.49 229.5 0 256 0C282.5 0 304 21.49 304 48zM304 464C304 490.5 282.5 512 256 512C229.5 512 208 490.5 208 464C208 437.5 229.5 416 256 416C282.5 416 304 437.5 304 464zM0 256C0 229.5 21.49 208 48 208C74.51 208 96 229.5 96 256C96 282.5 74.51 304 48 304C21.49 304 0 282.5 0 256zM512 256C512 282.5 490.5 304 464 304C437.5 304 416 282.5 416 256C416 229.5 437.5 208 464 208C490.5 208 512 229.5 512 256zM74.98 437C56.23 418.3 56.23 387.9 74.98 369.1C93.73 350.4 124.1 350.4 142.9 369.1C161.6 387.9 161.6 418.3 142.9 437C124.1 455.8 93.73 455.8 74.98 437V437zM142.9 142.9C124.1 161.6 93.73 161.6 74.98 142.9C56.24 124.1 56.24 93.73 74.98 74.98C93.73 56.23 124.1 56.23 142.9 74.98C161.6 93.73 161.6 124.1 142.9 142.9zM369.1 369.1C387.9 350.4 418.3 350.4 437 369.1C455.8 387.9 455.8 418.3 437 437C418.3 455.8 387.9 455.8 369.1 437C350.4 418.3 350.4 387.9 369.1 369.1V369.1z">
+                            
+                            </path>
+                            </svg>
+                          </div>
+                          <h1>25</h1>
+                        </div>
+              
+                        <div class="card closed col-5 m-4 text-center p-3">
+                          <div class="card-inner">
+                            <h3>Closed</h3>
+                            <svg class="order-svg my-2 svg-inline--fa fa-circle-check fa-2x mb-10 c-green" aria-hidden="true" focusable="false" data-prefix="far" data-icon="circle-check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z">
+                            
+                            </path>
+                            </svg>
+                          </div>
+                          <h1>1500</h1>
+                        </div>
+              
+                        <div class="card deleted col-5 m-4 text-center p-3">
+                          <div class="card-inner">
+                            <h3>Deleted</h3>
+                            <svg class="order-svg my-2 svg-inline--fa fa-rectangle-xmark fa-2x mb-10 c-red" aria-hidden="true" focusable="false" data-prefix="far" data-icon="rectangle-xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M175 175C184.4 165.7 199.6 165.7 208.1 175L255.1 222.1L303 175C312.4 165.7 327.6 165.7 336.1 175C346.3 184.4 346.3 199.6 336.1 208.1L289.9 255.1L336.1 303C346.3 312.4 346.3 327.6 336.1 336.1C327.6 346.3 312.4 346.3 303 336.1L255.1 289.9L208.1 336.1C199.6 346.3 184.4 346.3 175 336.1C165.7 327.6 165.7 312.4 175 303L222.1 255.1L175 208.1C165.7 199.6 165.7 184.4 175 175V175zM0 96C0 60.65 28.65 32 64 32H448C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96zM48 96V416C48 424.8 55.16 432 64 432H448C456.8 432 464 424.8 464 416V96C464 87.16 456.8 80 448 80H64C55.16 80 48 87.16 48 96z">
+                            
+                            </path>
+                            </svg>
+                          </div>
+                          <h1>56</h1>
+                        </div>
+              
+                      </div>
+                </div>
+                <div class="section my-3 col-lg-10 col-md-10 col-sm-12 projects-section">
+                    <h2 class="section-head col-12 text-capitalize">Products</h2>
+                    <table class="col-12">
+                        <thead>
+                        <tr>
+                            <td>Product Name</td>
+                            <td>Quantity</td>
+                            <td>Price</td>
+                            <td>Details</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Ministry</td>
+                            <td>10</td>
+                            <td>$5300</td>
+                            <td>
+                            <button class="btn btn-primary details">Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ministry</td>
+                            <td>10</td>
+                            <td>$5300</td>
+                            <td>
+                            <button class="btn btn-primary details">Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ministry</td>
+                            <td>10</td>
+                            <td>$5300</td>
+                            <td>
+                            <button class="btn btn-primary details">Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ministry</td>
+                            <td>10</td>
+                            <td>$5300</td>
+                            <td>
+                            <button class="btn btn-primary details">Details</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="javascript/dashboard.js"></script>
+    </body>
+</html>
